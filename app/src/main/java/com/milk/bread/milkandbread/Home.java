@@ -31,6 +31,8 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
     Button milk,promo,selling,fruit,product,vegetable,food,cabbage,brocolli,carrot,potato,rice,salad;
     ViewFlipper vflipper;
     ImageView slide1,slide2;
+    TextView tvVegetables;
+    LinearLayout ll_list_vegetable;
 
 
     @Override
@@ -61,6 +63,8 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
         rice=findViewById(R.id.Rice);
         milk=findViewById(R.id.milk);
         menu=findViewById(R.id.menu);
+        tvVegetables=findViewById(R.id.tvVegetables);
+        ll_list_vegetable=findViewById(R.id.ll_list_vegetable);
 
         llLeftDrawer=findViewById(R.id.llLeftDrawer);
         tvHome=findViewById(R.id.tvHome);
@@ -106,7 +110,18 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
 
 
 
+        tvVegetables.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               // ll_list_vegetable.setVisibility(View.VISIBLE);
 
+                if(ll_list_vegetable.getVisibility() == View.VISIBLE){
+                    ll_list_vegetable.setVisibility(View.GONE);
+                } else {
+                    ll_list_vegetable.setVisibility(View.VISIBLE);
+                }
+            }
+        });
 
 
 

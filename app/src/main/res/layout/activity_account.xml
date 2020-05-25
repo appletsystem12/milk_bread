@@ -9,7 +9,7 @@
     android:orientation="vertical"
   >
 
-    <include layout="@layout/app_bar"/>
+   <include layout="@layout/toolbar"/>
 
 
     <LinearLayout
@@ -33,16 +33,15 @@
                 android:weightSum="2">
 
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="192dp"
                     android:layout_height="match_parent"
-                    android:text="Setting"
-                   android:textAlignment="viewEnd"
                     android:layout_weight="1"
-                   android:textStyle="bold"
-                    android:textSize="20sp"
+                    android:text="Setting"
+                    android:textAlignment="viewEnd"
                     android:textAllCaps="true"
                     android:textColor="#FF8700"
-                    />
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="0dp"

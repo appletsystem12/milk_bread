@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/white"
+    android:background="@color/off_white"
     android:fillViewport="true"
     android:orientation="vertical"
     android:overScrollMode="never"
@@ -67,15 +67,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawablePadding="@dimen/_10sdp"
-                android:paddingTop="@dimen/_8sdp"
-                android:paddingBottom="@dimen/_8sdp"
-                android:paddingStart="@dimen/_20sdp"
-                android:paddingEnd="@dimen/_26sdp"
-                android:textSize="@dimen/_16sdp"
-                android:gravity="center_vertical"
                 android:drawableTint="@color/black"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_26sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="Home"
                 android:textColor="@color/black"
-                android:text="Home" />
+                android:textSize="@dimen/_16sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_border"/>
 
             <TextView
                 android:id="@+id/tvHealthyFood"
@@ -91,6 +96,10 @@
                 android:drawableTint="@color/black"
                 android:textColor="@color/black"
                 android:text="Healthy Food" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_border"/>
             <TextView
                 android:id="@+id/tvVegetables"
                 android:layout_width="match_parent"
@@ -106,6 +115,10 @@
                 android:drawableTint="@color/black"
                 android:textColor="@color/black"
                 android:text="Vegetables" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_border"/>
 
             <LinearLayout
                 android:id="@+id/ll_list_vegetable"
@@ -113,6 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"
+                android:visibility="gone"
                 android:orientation="vertical">
 
                 <TextView
@@ -129,6 +143,10 @@
                     android:drawableTint="@color/black"
                     android:textColor="@color/black"
                     android:text="Cabbage" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_border"/>
 
                 <TextView
                     android:id="@+id/tvCorn"
@@ -144,6 +162,10 @@
                     android:drawableTint="@color/black"
                     android:textColor="@color/black"
                     android:text="Corn" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_border"/>
 
                 <TextView
                     android:id="@+id/tvPotato"
@@ -159,6 +181,10 @@
                     android:drawableTint="@color/black"
                     android:textColor="@color/black"
                     android:text="Potato" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_border"/>
 
                 <TextView
                     android:id="@+id/Carrot"
@@ -174,6 +200,10 @@
                     android:drawableTint="@color/black"
                     android:textColor="@color/black"
                     android:text="Carrot" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_border"/>
             </LinearLayout>
 
 
@@ -194,7 +224,10 @@
                 android:textColor="@color/black"
                 android:text="Fruits" />
 
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_border"/>
 
             <TextView
                 android:id="@+id/tvBerries"
@@ -210,6 +243,10 @@
                 android:drawableTint="@color/black"
                 android:textColor="@color/black"
                 android:text="Berries" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_border"/>
 
             <TextView
                 android:id="@+id/tvHerbs"
@@ -225,6 +262,10 @@
                 android:drawableTint="@color/black"
                 android:textColor="@color/black"
                 android:text="Herbs" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_border"/>
 
             <TextView
                 android:id="@+id/tvMeat"
@@ -240,6 +281,10 @@
                 android:drawableTint="@color/black"
                 android:textColor="@color/black"
                 android:text="Meat &amp; Seafood" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_border"/>
 
             <TextView
                 android:id="@+id/tvNatural"
@@ -255,6 +300,10 @@
                 android:drawableTint="@color/black"
                 android:textColor="@color/black"
                 android:text="Natural &amp; Organic" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_border"/>
 
             <TextView
                 android:id="@+id/tvSnack"
@@ -270,7 +319,10 @@
                 android:drawableTint="@color/black"
                 android:textColor="@color/black"
                 android:text="Snack" />
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_border"/>
             <TextView
                 android:id="@+id/tvMilk"
                 android:layout_width="match_parent"

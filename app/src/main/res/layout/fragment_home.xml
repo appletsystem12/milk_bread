@@ -58,7 +58,7 @@
                     android:weightSum="3"
                     android:orientation="horizontal">
                     <Button
-                        android:layout_width="105sp"
+                        android:layout_width="match_parent"
                         android:layout_height="140sp"
                         android:layout_weight="1"
                         android:layout_marginEnd="10sp"
@@ -66,38 +66,35 @@
                         android:background="@drawable/bestpromo"/>
 
                     <Button
-                        android:layout_width="105sp"
+                        android:layout_width="match_parent"
                         android:layout_height="140sp"
                         android:layout_weight="1"
                         android:layout_marginEnd="10sp"
                         android:id="@+id/selling"
+                        android:visibility="gone"
                         android:background="@drawable/bestselling"/>
                     <Button
-                        android:layout_width="105sp"
+                        android:layout_width="match_parent"
                         android:layout_height="140sp"
                         android:layout_weight="1"
                         android:layout_marginEnd="10sp"
                         android:id="@+id/fruits"
+                        android:visibility="gone"
                         android:background="@drawable/fruit"/>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="10sp"
-                        android:weightSum="3">
 
                         <Button
                             android:id="@+id/newpdt"
-                            android:layout_width="105sp"
+                            android:layout_width="match_parent"
                             android:layout_height="140sp"
                             android:layout_marginEnd="10sp"
                             android:layout_weight="1"
+                            android:visibility="gone"
                             android:background="@drawable/newproduct" />
 
                         <Button
                             android:id="@+id/vegetables"
-                            android:layout_width="105sp"
+                            android:layout_width="match_parent"
                             android:layout_height="140sp"
                             android:layout_marginEnd="10sp"
                             android:layout_weight="1"
@@ -105,12 +102,12 @@
 
                         <Button
                             android:id="@+id/fastfood"
-                            android:layout_width="105sp"
+                            android:layout_width="match_parent"
                             android:layout_height="140sp"
                             android:layout_marginEnd="10sp"
                             android:layout_weight="1"
                             android:background="@drawable/fastfood" />
-                    </LinearLayout>
+
                 </LinearLayout>
 
                 <TextView
@@ -140,6 +137,7 @@
                         android:textStyle="bold"
                         android:layout_weight="1"
                         android:textColor="#fff"
+                        android:onClick="onClick"
                         android:background="@drawable/custom_button"
                         />
                     <Button
@@ -150,6 +148,7 @@
                         android:textStyle="bold"
                         android:layout_marginStart="5sp"
                         android:layout_weight="1"
+                        android:onClick="onClick"
                         android:textColor="#fff"
                         android:background="@drawable/custom_button"
                         />
@@ -162,6 +161,7 @@
                         android:layout_marginStart="5sp"
                         android:layout_marginEnd="10sp"
                         android:layout_weight="1"
+                        android:onClick="onClick"
                         android:textColor="#fff"
                         android:background="@drawable/custom_button"
                         />
@@ -182,6 +182,7 @@
                         android:textStyle="bold"
                         android:layout_marginStart="10sp"
                         android:layout_weight="1"
+                        android:onClick="onClick"
                         android:textColor="#fff"
                         android:background="@drawable/custom_button"
                         />
@@ -194,6 +195,7 @@
                         android:layout_marginStart="5sp"
                         android:layout_weight="1"
                         android:textColor="#fff"
+                        android:onClick="onClick"
                         android:background="@drawable/custom_button"
                         />
                     <Button
@@ -202,6 +204,7 @@
                         android:id="@+id/Salad"
                         android:text="Salad"
                         android:textStyle="bold"
+                        android:onClick="onClick"
                         android:layout_marginStart="5sp"
                         android:layout_marginEnd="10sp"
                         android:layout_weight="1"
@@ -268,6 +271,7 @@
                         android:layout_weight="1"
                         android:layout_marginStart="10sp"
                         android:id="@+id/egg"
+                        android:onClick="onClick"
                         android:background="@drawable/egg"/>
 
                     <Button
@@ -276,6 +280,7 @@
                         android:id="@+id/beverage"
                         android:layout_marginStart="10sp"
                         android:layout_weight="1"
+                        android:onClick="onClick"
                         android:background="@drawable/beverages"/>
                     <Button
                         android:layout_width="105sp"
@@ -284,6 +289,7 @@
                         android:layout_marginStart="10sp"
                         android:layout_marginEnd="10sp"
                         android:layout_weight="1"
+                        android:onClick="onClick"
                         android:background="@drawable/snacks"/>
                 </LinearLayout>
                 <LinearLayout
@@ -297,6 +303,7 @@
                         android:layout_height="140sp"
                         android:layout_marginStart="10sp"
                         android:layout_weight="1"
+                        android:onClick="onClick"
                         android:id="@+id/oil"
                         android:background="@drawable/foodgrain"/>
 
@@ -305,12 +312,14 @@
                         android:layout_height="140sp"
                         android:id="@+id/pooja"
                         android:layout_weight="1"
+                        android:onClick="onClick"
                         android:layout_marginStart="10sp"
                         android:background="@drawable/pooja"/>
                     <Button
                         android:layout_width="105sp"
                         android:layout_height="140sp"
                         android:id="@+id/baby"
+                        android:onClick="onClick"
                         android:layout_marginStart="10sp"
                         android:layout_marginEnd="10sp"
                         android:layout_weight="1"
@@ -327,6 +336,7 @@
                         android:layout_height="140sp"
                         android:layout_marginStart="10sp"
                         android:layout_weight="1"
+                        android:onClick="onClick"
                         android:id="@+id/beauty"
                         android:background="@drawable/beauty"/>
 
@@ -335,12 +345,14 @@
                         android:layout_height="140sp"
                         android:id="@+id/clean"
                         android:layout_weight="1"
+                        android:onClick="onClick"
                         android:layout_marginStart="10sp"
                         android:background="@drawable/cleaning"/>
                     <Button
                         android:layout_width="105sp"
                         android:layout_height="140sp"
                         android:id="@+id/petcare"
+                        android:onClick="onClick"
                         android:layout_marginStart="10sp"
                         android:layout_marginEnd="10sp"
                         android:layout_weight="1"
