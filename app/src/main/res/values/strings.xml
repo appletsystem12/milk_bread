@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Milk &amp; Bread</string>
+
+        <string name="drawerOpen">drawerOpen</string>
+        <string name="drawerClose">drawerClose</string>
+        <string name="desc">Image</string>
+        <string name="find_products">FIND PRODUCTS</string>
+        <string name="Popular_Search">POPULAR SEARCH</string>
+        <string name="categories">CATEGORIES</string>
+
+        <!-- TODO: Remove or change this placeholder text -->
+        <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D71149"
+    tools:context=".verify_otp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_marginTop="35sp"
+        android:src="@drawable/logo"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150sp"
+        android:background="#F9F9FA"
+        android:padding="25sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registration"
+            android:text="VERIFY YOUR NUMBER "
+            android:layout_marginTop="55sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#D71149"
+            android:textSize="30sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:layout_marginTop="50sp"
+            android:focusableInTouchMode="true"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter otp"
+                android:ems="10"
+                android:id="@+id/Enter_otp"
+                android:gravity="center"
+                android:padding="25sp"
+                android:inputType="number"
+                android:textSize="20sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="65sp"
+            android:text="RESEND OTP"
+            android:textSize="35sp"
+            android:id="@+id/resend"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="35sp"
+            android:textColor="#D71149"/>
+
+        <Button
+            android:layout_width="160sp"
+            android:layout_height="60sp"
+            android:id="@+id/submit"
+            android:text="submit"
+            android:layout_below="@id/Enter_otp"
+            android:layout_marginTop="35sp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:background="@drawable/custom_button"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D71149"
+    tools:context=".already_account">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_marginTop="35sp"
+        android:src="@drawable/logo"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150sp"
+        android:background="#F9F9FA"
+        android:padding="25sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Account"
+            android:textSize="35sp"
+            android:id="@+id/login"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#D71149"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:layout_marginTop="50sp"
+            android:focusableInTouchMode="true"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ENTER   USERNAME"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/username"
+                android:textStyle="bold"
+                android:inputType="text"
+                android:textSize="20sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:layout_marginTop="30sp"
+            app:passwordToggleEnabled="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" ENTER  PASSWORD"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:ems="10"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="160sp"
+            android:layout_height="60sp"
+            android:id="@+id/submit"
+            android:text="submit"
+            android:layout_marginTop="35sp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/custom_button"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35sp"
+            android:text="FORGOT PASSWORD"
+            android:textSize="20sp"
+            android:id="@+id/forgot"
+            android:layout_gravity="center"
+            android:layout_marginTop="55sp"
+            android:textStyle="bold"
+            android:textColor="#D71149"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35sp"
+            android:text="Create Account"
+            android:textSize="20sp"
+            android:id="@+id/create_account"
+            android:layout_gravity="center"
+            android:layout_marginTop="25sp"
+            android:textStyle="bold"
+            android:textColor="#D71149"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

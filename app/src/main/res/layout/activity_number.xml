@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D71149"
+    tools:context=".Number">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_marginTop="35sp"
+        android:src="@drawable/logo"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150sp"
+        android:background="#F9F9FA"
+        android:padding="25sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Account"
+            android:textSize="25sp"
+            android:id="@+id/login"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#D71149"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="55sp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MOBILE NUMBER"
+                android:gravity="center"
+                android:padding="25sp"
+                android:id="@+id/Enter_number"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:textSize="20sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Generate"
+            android:layout_below="@+id/otp"
+            android:layout_gravity="center"
+            android:text="Generate otp"
+            android:textColor="#FCFDFF"
+            android:background="@drawable/custom_button"
+            android:padding="25sp"
+            android:textSize="20sp"
+            android:layout_marginTop="55sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="65sp"
+            android:text="Already have account ?"
+            android:id="@+id/already"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25sp"
+            android:textColor="#D71149"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

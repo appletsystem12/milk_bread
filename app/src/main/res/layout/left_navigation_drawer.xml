@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    tools:ignore="MissingPrefix,UnusedAttribute">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:background="#D71149"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivCloseDrawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_gravity="end"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_close"
+                android:tint="@color/white"/>
+
+
+
+
+
+            <TextView
+                android:id="@+id/txtDisplayName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="Hi, Guest"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_26sdp"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="center_vertical"
+                android:drawableTint="@color/black"
+                android:textColor="@color/black"
+                android:text="Home" />
+
+            <TextView
+                android:id="@+id/tvHealthyFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_26sdp"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="center_vertical"
+                android:drawableTint="@color/black"
+                android:textColor="@color/black"
+                android:text="Healthy Food" />
+            <TextView
+                android:id="@+id/tvVegetables"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_26sdp"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="center_vertical"
+                android:drawableTint="@color/black"
+                android:textColor="@color/black"
+                android:text="Vegetables" />
+
+            <LinearLayout
+                android:id="@+id/ll_list_vegetable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCabbage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_26sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:gravity="center_vertical"
+                    android:drawableTint="@color/black"
+                    android:textColor="@color/black"
+                    android:text="Cabbage" />
+
+                <TextView
+                    android:id="@+id/tvCorn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_26sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:gravity="center_vertical"
+                    android:drawableTint="@color/black"
+                    android:textColor="@color/black"
+                    android:text="Corn" />
+
+                <TextView
+                    android:id="@+id/tvPotato"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_26sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:gravity="center_vertical"
+                    android:drawableTint="@color/black"
+                    android:textColor="@color/black"
+                    android:text="Potato" />
+
+                <TextView
+                    android:id="@+id/Carrot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_26sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:gravity="center_vertical"
+                    android:drawableTint="@color/black"
+                    android:textColor="@color/black"
+                    android:text="Carrot" />
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/tvFruits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_26sdp"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="center_vertical"
+                android:drawableTint="@color/black"
+                android:textColor="@color/black"
+                android:text="Fruits" />
+
+
+
+            <TextView
+                android:id="@+id/tvBerries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_26sdp"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="center_vertical"
+                android:drawableTint="@color/black"
+                android:textColor="@color/black"
+                android:text="Berries" />
+
+            <TextView
+                android:id="@+id/tvHerbs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_26sdp"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="center_vertical"
+                android:drawableTint="@color/black"
+                android:textColor="@color/black"
+                android:text="Herbs" />
+
+            <TextView
+                android:id="@+id/tvMeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_26sdp"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="center_vertical"
+                android:drawableTint="@color/black"
+                android:textColor="@color/black"
+                android:text="Meat &amp; Seafood" />
+
+            <TextView
+                android:id="@+id/tvNatural"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_26sdp"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="center_vertical"
+                android:drawableTint="@color/black"
+                android:textColor="@color/black"
+                android:text="Natural &amp; Organic" />
+
+            <TextView
+                android:id="@+id/tvSnack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_26sdp"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="center_vertical"
+                android:drawableTint="@color/black"
+                android:textColor="@color/black"
+                android:text="Snack" />
+
+            <TextView
+                android:id="@+id/tvMilk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_26sdp"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="center_vertical"
+                android:drawableTint="@color/black"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="Milk" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
