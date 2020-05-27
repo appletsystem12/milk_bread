@@ -93,8 +93,7 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
         tvHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-           /*     fragment = new HomeFragment();
-                loadFragment(fragment);*/
+
 
             }
         });
@@ -177,6 +176,22 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
                 break;
             case R.id.Salad:
                 Toast.makeText(this,"Salad  clicked",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.menu:
+                Animation RightSwipe = AnimationUtils.loadAnimation(Home.this, R.anim.anim_slide_in_right);
+                llLeftDrawer.startAnimation(RightSwipe);
+                llLeftDrawer.setVisibility(View.VISIBLE);
+                break;
+            case R.id.ivCloseDrawer:
+                llLeftDrawer.setVisibility(View.GONE);
+                break;
+            case R.id.account:
+                Intent intent1 = new Intent(Home.this, MyAccount.class);
+                startActivity(intent1);
+                break;
+            case R.id.cart:
+                Intent intent2=new Intent(Home.this, cart_item_layout.class);
+                startActivity(intent2);
                 break;
 
 

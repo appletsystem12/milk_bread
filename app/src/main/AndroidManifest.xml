@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.milk.bread.milkandbread">
 
@@ -7,11 +8,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-
+        android:theme="@style/AppTheme">
+        <activity android:name=".Congrats"></activity>
+        <activity android:name=".Edit_Account" />
+        <activity android:name=".MyAccount" />
         <activity android:name=".Contact_us" />
         <activity android:name=".Wishlist" />
-        <activity android:name=".Account" />
         <activity android:name=".verify_otp" />
         <activity android:name=".Wallet" />
         <activity android:name=".cart_item_layout" />
@@ -29,4 +31,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

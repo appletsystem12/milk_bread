@@ -57,6 +57,7 @@
             android:layout_height="wrap_content"
             android:text="PLace ORDER"
             android:textColor="#D71149"
+            android:id="@+id/place_order"
             android:textStyle="bold"
             android:textSize="15sp"
             android:background="@drawable/white_button"
@@ -137,6 +138,98 @@
                 android:paddingStart="15sp"
                 android:gravity="center"
                 android:hint="Delivery date will be here"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Pick Schedule"
+                android:textStyle="bold"
+                android:textColor="#000"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_25sdp">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Daily"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:background="@drawable/custom_button"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:text="Alternate Days"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:background="@drawable/custom_button"
+                            android:gravity="center"
+                            android:padding="@dimen/_10sdp"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_25sdp">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Every 3 days"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:background="@drawable/custom_button"
+                            android:gravity="center"
+
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="Weekly"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:background="@drawable/custom_button"
+
+
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="Monthly"
+                            android:textColor="#fff"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:background="@drawable/custom_button"
+
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
 
 
