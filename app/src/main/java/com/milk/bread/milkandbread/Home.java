@@ -65,13 +65,14 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
         menu=findViewById(R.id.menu);
         tvVegetables=findViewById(R.id.tvVegetables);
         ll_list_vegetable=findViewById(R.id.ll_list_vegetable);
-
+        account=findViewById(R.id.account);
         llLeftDrawer=findViewById(R.id.llLeftDrawer);
         tvHome=findViewById(R.id.tvHome);
         llLeftDrawer.setVisibility(View.GONE);
+        cart=findViewById(R.id.cart);
 
 
-
+        cart.setOnClickListener(this);
         milk.setOnClickListener(this);
         promo.setOnClickListener(this);
         selling.setOnClickListener(this);
@@ -79,7 +80,7 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
         product.setOnClickListener(this);
         vegetable.setOnClickListener(this);
         food.setOnClickListener(this);
-
+        account.setOnClickListener(this);
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -186,11 +187,11 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
                 llLeftDrawer.setVisibility(View.GONE);
                 break;
             case R.id.account:
-                Intent intent1 = new Intent(Home.this, MyAccount.class);
+                Intent intent1 = new Intent(Home.this,MyAccount.class);
                 startActivity(intent1);
                 break;
             case R.id.cart:
-                Intent intent2=new Intent(Home.this, cart_item_layout.class);
+                Intent intent2=new Intent(Home.this,cart.class);
                 startActivity(intent2);
                 break;
 

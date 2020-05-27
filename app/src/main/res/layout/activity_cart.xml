@@ -13,6 +13,7 @@
         android:orientation="horizontal"
         android:padding="16sp"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_50sdp"
         android:background="#D71149"
         >
         <LinearLayout
@@ -68,9 +69,10 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20sp"
         android:layout_marginRight="20sp"
+        android:layout_marginBottom="@dimen/_100sdp"
         >
 
         <LinearLayout
@@ -197,7 +199,6 @@
                             android:textStyle="bold"
                             android:background="@drawable/custom_button"
                             android:gravity="center"
-
                             />
 
                         <Button
@@ -210,8 +211,6 @@
                             android:textColor="#fff"
                             android:textStyle="bold"
                             android:background="@drawable/custom_button"
-
-
                             />
 
                         <Button
@@ -223,17 +222,10 @@
                             android:layout_weight="1"
                             android:textStyle="bold"
                             android:background="@drawable/custom_button"
-
                             />
-
-
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-
-
-
-
         </LinearLayout>
     </ScrollView>
 
