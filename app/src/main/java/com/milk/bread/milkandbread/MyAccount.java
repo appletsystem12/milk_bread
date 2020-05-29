@@ -23,7 +23,6 @@ public class MyAccount extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent i = new Intent(MyAccount.this,Home.class);
                 startActivity(i);
             }

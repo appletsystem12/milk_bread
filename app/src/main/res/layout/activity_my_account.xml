@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_10sdp"
+    tools:context=".MyAccount">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/backbutton"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/ic_back"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="match_parent"
+                    android:text="MY ACCOUNT"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:text="Owner name"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_15sdp"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"
+                                android:textSize="@dimen/_15sdp"
+                                android:textStyle="bold"
+                                android:text="Email id"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"
+                                android:textSize="@dimen/_15sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textStyle="bold"
+                                android:text="Number"
+                                />
+
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_weight="0.5"
+                            android:layout_gravity="center"
+                            android:text="Edit"
+                            android:id="@+id/edit"
+                            android:textStyle="bold"
+                            android:textColor="#d71149"
+                            android:background="@drawable/white_button"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Address"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12sdp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:hint="your address will be here"
+                            android:gravity="center"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_next"
+                            android:layout_weight="0.2"/>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:layout_marginTop="@dimen/_25sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_15sdp"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="#abc"
+                            android:layout_weight="0.5"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_weight="1.3"
+                            android:text="My Subscription"/>
+
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_next"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="0.2"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_15sdp"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="#000"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_weight="1.3"
+                            android:text="My Orders"/>
+
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_next"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="0.2"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_15sdp"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="#d71149"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_weight="1.3"
+                            android:text="My Wallet"/>
+
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_next"
+                            android:id="@+id/wallets"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="0.2"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:text="Alerts"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_15sdp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="#abc"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Ring the Bell"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <Switch
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

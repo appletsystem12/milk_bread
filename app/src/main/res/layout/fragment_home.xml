@@ -51,6 +51,8 @@
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textSize="25sp"/>
+
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -58,7 +60,7 @@
                     android:weightSum="3"
                     android:orientation="horizontal">
                     <Button
-                        android:layout_width="match_parent"
+                        android:layout_width="105sp"
                         android:layout_height="140sp"
                         android:layout_weight="1"
                         android:layout_marginEnd="10sp"
@@ -66,48 +68,51 @@
                         android:background="@drawable/bestpromo"/>
 
                     <Button
-                        android:layout_width="match_parent"
+                        android:layout_width="105sp"
                         android:layout_height="140sp"
                         android:layout_weight="1"
                         android:layout_marginEnd="10sp"
                         android:id="@+id/selling"
-                        android:visibility="gone"
                         android:background="@drawable/bestselling"/>
                     <Button
-                        android:layout_width="match_parent"
+                        android:layout_width="105sp"
                         android:layout_height="140sp"
                         android:layout_weight="1"
                         android:layout_marginEnd="10sp"
                         android:id="@+id/fruits"
-                        android:visibility="gone"
                         android:background="@drawable/fruit"/>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp"
+                    android:weightSum="3">
 
-                        <Button
-                            android:id="@+id/newpdt"
-                            android:layout_width="match_parent"
-                            android:layout_height="140sp"
-                            android:layout_marginEnd="10sp"
-                            android:layout_weight="1"
-                            android:visibility="gone"
-                            android:background="@drawable/newproduct" />
+                    <Button
+                        android:id="@+id/newpdt"
+                        android:layout_width="105sp"
+                        android:layout_height="140sp"
+                        android:layout_marginEnd="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/newproduct" />
 
-                        <Button
-                            android:id="@+id/vegetables"
-                            android:layout_width="match_parent"
-                            android:layout_height="140sp"
-                            android:layout_marginEnd="10sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/vegetables" />
+                    <Button
+                        android:id="@+id/vegetables"
+                        android:layout_width="105sp"
+                        android:layout_height="140sp"
+                        android:layout_marginEnd="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/vegetables" />
 
-                        <Button
-                            android:id="@+id/fastfood"
-                            android:layout_width="match_parent"
-                            android:layout_height="140sp"
-                            android:layout_marginEnd="10sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/fastfood" />
-
+                    <Button
+                        android:id="@+id/fastfood"
+                        android:layout_width="105sp"
+                        android:layout_height="140sp"
+                        android:layout_marginEnd="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/fastfood" />
                 </LinearLayout>
 
                 <TextView

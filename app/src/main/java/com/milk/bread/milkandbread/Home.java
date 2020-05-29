@@ -36,16 +36,12 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
 
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
 
         ivCloseDrawer = findViewById(R.id.ivCloseDrawer);
-
-
-
         vflipper=findViewById(R.id.v_flipper);// to make it move able
         slide1=findViewById(R.id.slide1); // slide 1
         slide2=findViewById(R.id.slide2);// slide 2
@@ -90,26 +86,17 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
                 llLeftDrawer.setVisibility(View.VISIBLE);
             }
         });
-
         tvHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
             }
         });
-
-
-
         ivCloseDrawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 llLeftDrawer.setVisibility(View.GONE);
             }
         });
-
-
-
         tvVegetables.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -117,14 +104,13 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
 
                 if(ll_list_vegetable.getVisibility() == View.VISIBLE){
                     ll_list_vegetable.setVisibility(View.GONE);
-                } else {
+                }
+                else
+                    {
                     ll_list_vegetable.setVisibility(View.VISIBLE);
                 }
             }
         });
-
-
-
     }
 
     @Override
@@ -136,26 +122,21 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
                 Intent i = new Intent(this, milk.class);
                 startActivity(i);
                 break;
-
             case R.id.promo:
                 Toast.makeText(this,"promo clicked",Toast.LENGTH_SHORT).show();
                 break;
-
             case R.id.selling:
                 Toast.makeText(this,"selling clicked",Toast.LENGTH_SHORT).show();
                 break;
-
             case R.id.fruit:
                 Toast.makeText(this,"fruit clicked",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.newpdt:
                 Toast.makeText(this,"New Product clicked",Toast.LENGTH_SHORT).show();
                 break;
-
             case R.id.vegetable:
                 Toast.makeText(this,"vegetable clicked",Toast.LENGTH_SHORT).show();
                 break;
-
             case R.id.fastfood:
                 Toast.makeText(this,"Fast food  clicked",Toast.LENGTH_SHORT).show();
                 break;
@@ -171,7 +152,6 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
             case R.id.Potato:
                 Toast.makeText(this,"Potato  clicked",Toast.LENGTH_SHORT).show();
                 break;
-
             case R.id.Rice:
                 Toast.makeText(this,"Rice  clicked",Toast.LENGTH_SHORT).show();
                 break;
@@ -195,9 +175,7 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
                 startActivity(intent2);
                 break;
 
-
-
-            default:
+                default:
                 break;
         }
     }
